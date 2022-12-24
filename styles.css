@@ -1,0 +1,168 @@
+body {
+    margin: 0px;
+    background-image: url(qatar_background.jpeg);
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.hiddenDiv {
+    display: none;
+}
+
+.container {
+    position: absolute;
+}
+
+.center {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    width: 100vw;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    width: 50vw;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 50vw;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: calc(100vh - 10em);
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: calc(100vh - 10em);
+}
+
+.centerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: calc(100vh - 10em);
+}
+
+#centerRow_2 {
+    display: none !important;
+}
+
+input {
+    width: 8vw;
+    background-color: rgba(123, 21, 50, 0.9);
+    border: 2px solid white;
+    border-radius: 2px;
+    color: white;
+}
+
+.rightContent input {
+    margin-right: 5vw;
+}
+
+.leftContent input {
+    margin-left: 5vw;
+}
+
+.stats {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: flex-end;
+    color: grey;
+}
+
+#triggerStats {
+    padding: 0.2em;
+    border: 2px solid rgba(123, 21, 50, 0.9);
+    border-radius: 5%;
+    background-color: white;
+    color: rgba(123, 21, 50, 0.9);
+    position: absolute;
+    z-index: 1;
+}
+
+@media screen and (max-width: 950px) {
+    input {
+        margin-top: 0.5em !important;
+    }
+
+    label {
+        margin-bottom: 5px !important;
+    }
+
+    .left, .right {
+        padding-bottom: 0px !important;
+    }
+
+    .rightContent, .leftContent {
+        height: calc(100vh - 5em);
+    }
+
+    .centerContent {
+        height: calc(100vh - 2.5em);
+        justify-content: space-between;
+    }
+
+    #centerRow_0 {
+        margin-top: 5em;
+    }
+
+    #centerRow_1 {
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    input {
+        margin-top: 0.2em !important;
+    }
+
+    #centerRow_0 {
+        margin-top: 4.5em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hiddenDiv {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hiddenDiv h1 {
+        text-align: center;
+    }
+    
+    .container {
+        display: none;
+    }
+
+    .center {
+        display: none;
+    }
+}
